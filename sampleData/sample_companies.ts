@@ -1,7 +1,8 @@
-import { Company } from '@/types/company';
+import { CompanyDetails } from '@/types/company';
 
 export const companies: Company[] = [
   {
+    id:1,
     companyName: "BlueWave Technologies",
     number: "+592-600-1234",
     email: "info@bluewave.com",
@@ -9,6 +10,7 @@ export const companies: Company[] = [
     service: "IT Solutions"
   },
   {
+    id:2,
     companyName: "GreenLeaf Farms",
     number: "+592-601-5678",
     email: "sales@greenleaffarms.com",
@@ -16,6 +18,7 @@ export const companies: Company[] = [
     service: "Agriculture Produce"
   },
   {
+    id:3,
     companyName: "Sunrise Construction",
     number: "+592-602-9876",
     email: "contact@sunrisebuild.com",
@@ -23,6 +26,7 @@ export const companies: Company[] = [
     service: "Building & Contracting"
   },
   {
+    id:4,
     companyName: "Riverbend Logistics",
     number: "+592-603-2222",
     email: "support@riverbendlogistics.com",
@@ -30,6 +34,7 @@ export const companies: Company[] = [
     service: "Transportation & Shipping"
   },
   {
+    id:5,
     companyName: "Golden Spoon Catering",
     number: "+592-604-3333",
     email: "orders@goldenspoon.com",
@@ -37,6 +42,7 @@ export const companies: Company[] = [
     service: "Food & Catering"
   },
   {
+    id:6,
     companyName: "BrightFuture Academy",
     number: "+592-605-4444",
     email: "admin@brightfuture.edu",
@@ -44,6 +50,7 @@ export const companies: Company[] = [
     service: "Education & Training"
   },
   {
+    id:7,
     companyName: "IslandStyle Boutique",
     number: "+592-606-5555",
     email: "shop@islandstyle.com",
@@ -51,6 +58,7 @@ export const companies: Company[] = [
     service: "Retail Clothing"
   },
   {
+    id:8,
     companyName: "EcoPower Solutions",
     number: "+592-607-6666",
     email: "info@ecopowergy.com",
@@ -58,6 +66,7 @@ export const companies: Company[] = [
     service: "Renewable Energy"
   },
   {
+    id:9,
     companyName: "SilverLine Travel",
     number: "+592-608-7777",
     email: "bookings@silverline.com",
@@ -65,6 +74,7 @@ export const companies: Company[] = [
     service: "Tourism & Travel"
   },
   {
+    id:10,
     companyName: "HealthFirst Pharmacy",
     number: "+592-609-8888",
     email: "pharmacy@healthfirst.com",
@@ -72,3 +82,6 @@ export const companies: Company[] = [
     service: "Pharmaceuticals"
   }
 ];
+
+
+export const topFiveBusinesses:CompanyDetails[] = companies.filter(business => (business.id < unknownVariable))

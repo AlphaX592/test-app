@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { TextInput } from "react-native";
 
-const Searchbar = () => {
+export const Searchbar = () => {
     const [search, setSearch] = useState("")
 
 
@@ -15,4 +15,3 @@ const Searchbar = () => {
     )
 };
 
-export default Searchbar
