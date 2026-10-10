@@ -1,11 +1,7 @@
 import '@/global.css';
 import { Tabs } from "expo-router";
-import { styled } from 'react-native-css';
-import { SafeAreaView as RNsafeAreaView } from 'react-native-safe-area-context';
 
-const SafeAreaView = styled(RNsafeAreaView);
-
-export default function RootLayout() {
+export default function TabLayout() {
   return (
     <Tabs
       screenOptions={
@@ -13,6 +9,11 @@ export default function RootLayout() {
           headerShown: false
         }
       }  
-    />
+    >
+      <Tabs.Screen name="index" options={{ title: 'Home' }} />
+      <Tabs.Screen name="businesses" options={{ title: 'Businesses' }} />
+      <Tabs.Screen name="todos" options={{ title: 'Todos' }} />
+      <Tabs.Screen name="settings" options={{ title: 'Settings' }} />
+    </Tabs>
   );
 }

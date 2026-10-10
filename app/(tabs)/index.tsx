@@ -28,6 +28,9 @@ export default function App( ) {
               <Link href="/(tabs)/businesses">
                 Go to Businesses Page
               </Link>
+              <Link href="/(tabs)/todos">
+                Go to Todo List
+              </Link>
               <View className="self-start p-2 m-2">
                 <Text>Top Rated Businesses</Text>
               </View>

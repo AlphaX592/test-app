@@ -1,6 +1,6 @@
 import { CompanyDetails } from '@/types/company';
 
-export const companies: Company[] = [
+export const companies: CompanyDetails[] = [
   {
     id:1,
     companyName: "BlueWave Technologies",
@@ -83,5 +83,3 @@ export const companies: Company[] = [
   }
 ];
 
-
-export const topFiveBusinesses:CompanyDetails[] = companies.filter(business => (business.id < unknownVariable))
