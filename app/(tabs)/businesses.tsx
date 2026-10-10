@@ -1,5 +1,6 @@
 import { VerticalCompanyCardElement } from '@/components/companyListComponents';
 import { ListEmptyView } from '@/components/listEmpty';
+import { Searchbar } from '@/components/searchbar';
 import { companies } from '@/sampleData/sample_companies';
 import { FlatList, Text, View } from 'react-native';
 import { styled } from 'react-native-css';
@@ -9,6 +10,7 @@ const SafeAreaView = styled(RNSafeAreView)
 const Businesses = () => {
 return (
     <SafeAreaView className="flex-1 items-center justify-center bg-white-300">
+        <Searchbar/>
         <FlatList 
             className='w-full'
             showsVerticalScrollIndicator={false}
